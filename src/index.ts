@@ -1,3 +1,5 @@
+import "./style.css";
+import "@fontsource-variable/josefin-sans/index.css";
 import getApp from "./components/App/getApp";
 
 const rootElement = document.querySelector(".root");
