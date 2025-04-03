@@ -10,10 +10,10 @@ describe("Given the App component", () => {
 
       screen.appendChild(App);
 
-      const titleApp = screen.querySelector("h1");
+      const appTitle = screen.querySelector("h1");
 
-      expect(titleApp).not.toBeNull();
-      expect(titleApp?.textContent).toBe(expectedTitle);
+      expect(appTitle).not.toBeNull();
+      expect(appTitle?.textContent).toBe(expectedTitle);
     });
   });
 });

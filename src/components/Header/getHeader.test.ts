@@ -2,7 +2,7 @@ import getHeader from "./getHeader";
 
 describe("Given the Header component", () => {
   describe("When it renders", () => {
-    test("Then ir should show 'Monumnets of the World' inside a heading", () => {
+    test("Then it should show 'Monumets of the world' inside a heading", () => {
       const screen = document.createElement("div");
       const expectedTitle = "Monuments of the world";
 
