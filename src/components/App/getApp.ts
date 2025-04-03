@@ -1,8 +1,9 @@
 import getHeader from "../Header/getHeader";
+import "./App.css";
 
 const getApp = (): HTMLElement => {
   const mainContainer = document.createElement("div");
-  mainContainer.className = "main-containter";
+  mainContainer.className = "main-container";
 
   const Header = getHeader();
 
