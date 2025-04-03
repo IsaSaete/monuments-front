@@ -1,0 +1,25 @@
+.main-header {
+  color: #faf3e0;
+  width: 100%;
+  display: flex;
+  padding: 20px 10px;
+  border-bottom: 0.5px solid #faf3e0;
+  justify-content: center;
+}
+
+.title-header {
+  margin: 0;
+  font-size: 3rem;
+  transform: translateY(5px);
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px 4px #00000080;
+  align-items: center;
+}
+.subtitle-header {
+  font-size: 1.8rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: 2px 2px 4px #00000080;
+}
