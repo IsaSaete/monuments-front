@@ -17,7 +17,7 @@
   }
 }
 
-.header__title {
+.app__title {
   margin: 0;
   font-size: 3rem;
   transform: translateY(5px);
@@ -31,7 +31,7 @@
   }
 }
 
-.header__subtitle {
+.app__subtitle {
   font-size: 1.8rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -74,6 +74,6 @@
   }
 }
 
-.nav-list__link--active {
+.nav-menu__link--active {
   background-color: #232f3ba7;
 }
