@@ -5,7 +5,7 @@ const getHeader = (): HTMLElement => {
   header.className = "header";
 
   header.innerHTML = `
-  <h1 class="header__title">Monuments<span class="header__subtitle"> of the world</span></h1>
+  <h1 class="app__title">Monuments<span class="app__subtitle"> of the world</span></h1>
   <nav>
     <ul class="nav-list">
       <li><a class="nav-list__link" href="/monuments">Monuments</a></li>
