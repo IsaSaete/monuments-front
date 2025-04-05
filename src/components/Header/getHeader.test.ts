@@ -2,8 +2,12 @@ import getHeader from "./getHeader";
 
 describe("Given the Header component", () => {
   describe("When it renders", () => {
+    const screen = document.createElement("div");
+    afterEach(() => {
+      screen.innerHTML = "";
+    });
+
     test("Then it should show 'Monumets of the world' inside a heading", () => {
-      const screen = document.createElement("div");
       const expectedTitle = "Monuments of the world";
 
       const Header = getHeader();
@@ -14,6 +18,19 @@ describe("Given the Header component", () => {
 
       expect(appTitle).not.toBeNull();
       expect(appTitle?.textContent).toBe(expectedTitle);
+    });
+
+    test("Then it should show a 'Monument' link", () => {
+      const expectedLinkText = "Monuments";
+
+      const Header = getHeader();
+
+      screen.appendChild(Header);
+
+      const link = screen.querySelector("a");
+
+      expect(link).not.toBeNull();
+      expect(link?.textContent).toBe(expectedLinkText);
     });
   });
 });

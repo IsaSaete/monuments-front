@@ -2,9 +2,26 @@ import "./Header.css";
 
 const getHeader = (): HTMLElement => {
   const header = document.createElement("header");
-  header.className = "main-header";
+  header.className = "header";
 
-  header.innerHTML = `<h1 class="title-header">Monuments <span class="subtitle-header">of the world</span></h1>`;
+  header.innerHTML = `
+  <h1 class="header__title">Monuments<span class="header__subtitle"> of the world</span></h1>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="nav-list__link" href="/monuments">Monuments</a></li>
+    </ul>
+  </nav>
+`;
+
+  const links = header.querySelectorAll("a");
+
+  links.forEach((link) => {
+    const currentUrl = window.location.href;
+
+    if (link.href === currentUrl) {
+      link.classList.add("nav-menu__link--active");
+    }
+  });
 
   return header;
 };
