@@ -1,0 +1,8 @@
+.monument-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--secundary-color);
+  row-gap: 15px;
+  column-gap: 20px;
+  padding: 20px;
+}

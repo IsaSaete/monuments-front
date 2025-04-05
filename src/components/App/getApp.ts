@@ -1,5 +1,7 @@
 import getHeader from "../Header/getHeader";
 import "./App.css";
+import getMonumentCardList from "../../monument/MonumentCardList/getMonumentCardList";
+import monuments from "../../monument/data/data";
 
 const getApp = (): HTMLElement => {
   const mainContainer = document.createElement("div");
@@ -8,6 +10,9 @@ const getApp = (): HTMLElement => {
   const Header = getHeader();
 
   mainContainer.appendChild(Header);
+
+  const MonumentsList = getMonumentCardList(monuments);
+  mainContainer.appendChild(MonumentsList);
 
   return mainContainer;
 };
