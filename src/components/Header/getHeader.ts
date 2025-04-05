@@ -5,9 +5,7 @@ const getHeader = (): HTMLElement => {
   header.className = "header";
 
   header.innerHTML = `
-  <h1 class="header__title">Monuments
-    <span class="header__subtitle">of the world</span>
-  </h1>
+  <h1 class="header__title">Monuments<span class="header__subtitle"> of the world</span></h1>
   <nav>
     <ul class="nav-list">
       <li><a class="nav-list__link" href="/monuments">Monuments</a></li>
@@ -21,7 +19,7 @@ const getHeader = (): HTMLElement => {
     const currentUrl = window.location.href;
 
     if (link.href === currentUrl) {
-      link.classList.add("nav-list__link--active");
+      link.classList.add("nav-menu__link--active");
     }
   });
 
