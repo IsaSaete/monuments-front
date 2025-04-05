@@ -1,8 +1,9 @@
 import Monument from "../types";
+import "./Card.css";
 
 const getMonumentCard = (monument: Monument): HTMLElement => {
   const monumentCard = document.createElement("article");
-  monumentCard.className = "card";
+  monumentCard.className = "monument-card";
 
   const monumentName = document.createElement("h2");
   monumentName.className = "monument-name";
