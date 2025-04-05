@@ -6,4 +6,7 @@ export default defineConfig({
     environment: "happy-dom",
     globals: true,
   },
+  build: {
+    target: "ESNext",
+  },
 });
