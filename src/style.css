@@ -6,6 +6,7 @@
 
 .root {
   --secundary-color: #faf3e0;
+  --shadow-color: #00000080;
 }
 
 body {

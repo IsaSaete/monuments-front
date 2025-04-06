@@ -6,10 +6,10 @@ const getMonumentCard = (monument: Monument): HTMLElement => {
   monumentCard.className = "monument-card";
 
   monumentCard.innerHTML = `
-    <img src="${monument.imageUrl}" alt="Monument of ${monument.name}, located in the city of ${monument.city}, ${monument.country}" width="250">
-    <h2 class=" monument__name">${monument.name}</h2>
-    <p class="monument__description">${monument.description}</p>
-    <div class="monument__location">
+    <img class="monument-card__image" src="${monument.imageUrl}" alt="Monument of ${monument.name}, located in the city of ${monument.city}, ${monument.country}" width="250">
+    <h2 class=" monument-card__name">${monument.name}</h2>
+    <p class="monument-card__description">${monument.description}</p>
+    <div class="monument-card__location">
       <span>City: ${monument.city}</span>
       <span>Country: ${monument.country}</span>
    </div>
