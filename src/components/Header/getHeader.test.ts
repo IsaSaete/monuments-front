@@ -3,6 +3,7 @@ import getHeader from "./getHeader";
 describe("Given the Header component", () => {
   describe("When it renders", () => {
     const screen = document.createElement("div");
+
     afterEach(() => {
       screen.innerHTML = "";
     });
@@ -20,7 +21,7 @@ describe("Given the Header component", () => {
       expect(appTitle?.textContent).toBe(expectedTitle);
     });
 
-    test("Then it should show a 'Monument' link", () => {
+    test("Then it should show a 'Monuments' link", () => {
       const expectedLinkText = "Monuments";
 
       const Header = getHeader();

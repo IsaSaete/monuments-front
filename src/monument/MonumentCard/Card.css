@@ -3,9 +3,66 @@
   border-radius: 4px;
   padding: 20px;
   height: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 4px var(--shadow-color);
+  min-height: 250px;
+  min-width: 300px;
 }
 
-.monument-name {
+.monument-card__name {
+  color: #e2a705;
+  text-shadow: 2px 2px 4px var(--shadow-color);
   font-weight: 500;
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.monument-card__image {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.monument-card__description {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+  text-align: justify;
+
+  @media (width > 500px) {
+    font-size: 1.2rem;
+  }
+}
+
+.monument-card__location {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 0.8rem;
+
+  @media (width > 500px) {
+    font-size: 1.2rem;
+  }
+}
+
+.monument-card__location :first-child {
+  padding: 5px 10px;
+  background-color: #e2a705;
+  font-weight: 600;
+  color: #2c3e50;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.monument-card__location :last-child {
+  padding: 5px 10px;
+  background-color: #e2a705;
+  font-weight: 600;
+  color: #2c3e50;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px var(--shadow-color);
 }
