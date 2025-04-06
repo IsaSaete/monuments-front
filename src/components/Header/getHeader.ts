@@ -8,7 +8,7 @@ const getHeader = (): HTMLElement => {
   <h1 class="app__title">Monuments<span class="app__subtitle"> of the world</span></h1>
   <nav>
     <ul class="nav-list">
-      <li><a class="nav-list__link" href="/monuments">Monuments</a></li>
+      <li><a class="nav-list__link" href="/">Monuments</a></li>
     </ul>
   </nav>
 `;
